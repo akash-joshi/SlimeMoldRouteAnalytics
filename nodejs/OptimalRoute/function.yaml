@@ -1,0 +1,11 @@
+
+
+apiVersion: "nuclio.io/v1"
+kind: "Function"
+spec:
+  runtime: "nodejs"
+  handler: "handler"
+
+  build:
+    commands:
+    - "npm install --global axios"
